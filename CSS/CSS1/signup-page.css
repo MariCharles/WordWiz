@@ -1,0 +1,444 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Setting the default font family and weight for all elements */
+*{
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+}
+
+/* Setting common styles for the body and defining color variables */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #E8D3B0; 
+	--color-green:#007f67; 
+	--color-secondary:#505050;
+	--color-error:#cc3333;
+	--color-success:#007f67;
+	--border-radius:10px;
+}
+
+/* Styling the header */
+header {
+    display: flex;
+    background-color: #654328; 
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+/* Styling the images in the header */
+.header_images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling the logo image */
+.logo_img {
+    width: 80px;
+    height: auto;
+    align-self: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* Styling the heading image */
+.heading_img {
+    width: 150px;
+    height: auto;
+    align-self: center;
+    margin-right: 20px;
+}
+
+/* Styling the body background */
+.body_bg{
+	display:flex;
+	margin:0;
+	padding:2.5%;
+	position: relative;
+	
+}
+
+
+.body_bg::before {    
+	content: "";
+	background-image: url('../../IMG/IMG1/form_bg.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	opacity:0.6;
+  
+}
+
+/* Styling the form container */
+.container {
+	margin:auto;
+	position:relative;
+	justify-content:center;
+	width:600px;
+	max-width:600px;
+	height:auto;
+	padding:2.5rem;
+	box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+	border-radius: var(--border-radius);
+	background:white;
+	font-size:18px;	
+}
+
+/* Styling form elements */
+.form > *:first-child{
+	margin-top:0;
+}
+
+.form > *:last-child{
+	margin-bottom:0;
+}
+
+.form_title {
+	margin-bottom:2rem;
+	text-align:center;
+	font-weight: 700;
+}
+
+.form_message{
+	text-align:center;
+	margin-bottom:1rem;
+}
+
+.form_message-success {
+	color:var(--color-success);
+}
+
+.form_message-error {
+	color:var(--color-error);
+}
+
+.form_input-group{
+	margin-bottom:1rem;
+}
+
+.form_input{
+	display:block;
+	width:100%;
+	padding:0.75rem;
+	box-sizing:border-box;
+	border-radius:var(--border-radius);
+	border:1px solid #dddddd;
+	outline:none;
+	background:#eeeeee;
+	transition:background 0.2s, border-color 0.2s;
+	
+}
+
+.form_input:focus{
+	border-color:var(--color-secondary);
+	background:white;
+}
+
+.form_input-error{
+	color:var(--color-error);
+	border-color:var(--color-error);
+}
+
+.form_input-error-message{
+	margin-top:0.5rem;
+	font-size:0.85rem;
+	color:var(--color-error);
+}
+
+.form_text{
+	text-align:left;
+	font-size:15px;
+}
+
+.form_link{
+	color:var(--color-secondary);
+	text-decoration:none;
+	cursor:pointer;
+}
+
+.form_link:hover{
+	text-decoration:underline;
+	
+}
+
+.label {
+	display:block;
+	margin-bottom:0.5rem;
+}
+
+
+/* Styling form questions */
+.form_question {
+	text-align:left;
+	margin:0;
+	padding:0;
+	font-weight: 700;
+}
+
+/* Styling the select options in the sign up form */
+.select {
+	display: grid;
+	grid-template-columns: 1fr;
+	max-width: 100%;
+	gap: 1px;
+	padding-top:20px;
+	
+
+}
+
+.select__item {
+	padding: 15px;
+	cursor: pointer;
+	text-align: left;
+	border-radius: 10px;
+	background:#eeeeee;
+	margin:2px;
+  
+}
+
+.select__item--selected {
+  background:rgb(210, 181, 91); 
+  color: #ffffff;
+}
+
+
+
+.select__item:hover {
+	background:rgba(0,0,0,0.15);
+}
+
+.select__item:active {
+	transform:scale(0.98);
+}
+
+.select__item--selected:hover {
+	background: rgba(210,181,91,0.85);
+	
+	
+}
+
+/* Styling required fields */
+.required {
+    color: #cc3333;
+    margin-left: 5px;
+}
+
+#sign_in_link {
+    text-align: center;
+}
+
+/* Styling form buttons */
+.form_button {
+	width:50%;
+	padding:0.75rem 1rem;
+	font-weight:600;
+	font-size:1rem;
+	color:white;
+	border:none;
+	border-radius:var(--border-radius);
+	outline:none;
+	cursor:pointer;
+	margin:5px;
+
+}
+
+/* Styling form buttons in hover state */
+.form_button:hover{
+	transform:scale(1.02);
+}
+
+/* Styling form buttons in active state */
+.form_button:active{
+	transform:scale(0.98);
+}
+
+/* Styling the div the buttons are in */
+.buttons{
+	display:flex;
+}
+
+/* Styling submit button */
+#submit_btn{
+	background:#007f67;
+}
+
+/* Styling reset button */
+#reset_btn{
+	background:#c83349;
+}
+
+
+/* Styling the footer */
+.footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    background-color: #654328; 
+    padding: 20px;
+    text-align: center;
+}
+
+/* Styling the columns in the footer */
+.column {
+    padding: 10px;
+    justify-content: center;
+}
+
+/* Styling the column lists in the footer */
+.column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Styling the first item in column lists in the footer */
+.column ul li:first-child {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* Styling the items in column lists in the footer */
+.column ul li {
+    margin-bottom: 10px;
+}
+
+/* Styling the links in column lists in the footer */
+.column ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Changing the opacity of links in column lists in the footer on hover */
+.column ul li a:hover {
+    opacity: 0.5;
+}
+
+/* Styling the social media icons in the footer */
+#fb, #li {
+    width: 25px;
+}
+
+#ig, #yt {
+    width: 30px;
+}
+
+.soc-med-icons {
+    padding: 10px;
+    align-items: center;
+}
+
+/* Changing the opacity of social media icons in the footer on hover */
+.soc-med-icons:hover {
+    opacity: 0.5;
+}
+
+/* Styling for footer icons */
+.footer-icon {
+    display: inline-block; 
+    vertical-align: middle; 
+    width: 25px;
+    margin-right: 5px;
+}
+
+
+/* Bluring background when popup message appears */
+#blurBackground {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(2px); 
+    z-index: 999; /* Ensure the background is behind the popup */
+}
+
+/* Styling popup */ 
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+/* Styling content(text) inside popup */
+.popup-content {
+    color: black;
+    font-size: 18px;
+}
+
+/* Styling image inside popup */
+.popup-content .popup-img{
+	width: 300px;
+	height: auto;
+	border-radius: 15px;
+	display: block;
+    margin: 0 auto;
+}
+
+
+/* Media queries for responsive design */
+
+/* Media query for screens up to 1024px */
+@media only screen and (max-width: 1024px) {
+    /* Hide header icons */
+    .header_icons {
+        display: none; 
+    }
+
+    /* Display header images and navbar as block elements with centered text */
+    .header_images, #navbar {
+        display: block; 
+        text-align: center; 
+    }
+
+    /* Margin for logo image */
+    .logo_img {
+        margin-bottom: 10px;
+    }
+
+    
+}
+
+/* Media query for screens up to 768px */
+@media only screen and (max-width: 768px) {
+    /* Hide header images and icons */
+    .header_images, .header_icons {
+        display: none; 
+    }
+
+    
+    /* Adjust footer grid columns for smaller screens */
+    .footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Media query for screens up to 480px */
+@media only screen and (max-width: 480px) {
+    /* Adjust footer grid columns for smallest screens */
+    .footer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+

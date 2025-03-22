@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Setting the default font family and weight for all elements */
+*{
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+}
+
+/* Setting global styles for the body */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #E8D3B0; 
+}
+
+/* Styling the header */
+header {
+    display: flex;
+    background-color: #654328; 
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+}
+
+/* Styling the images in the header */
+.header_images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling the logo image */
+.logo_img {
+    width: 80px;
+    height: auto;
+    align-self: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* Styling the heading image */
+.heading_img {
+    width: 150px;
+    height: auto;
+    align-self: center;
+    margin-right: 20px;
+}
+
+/* Styling the navigation bar */
+#navbar {
+    display: flex;
+    align-items: center;
+}
+
+/* Styling the navigation bar list */
+#navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 5px;
+}
+
+/* Styling the navigation bar list items */
+.navlist li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 12px 20px;
+    text-decoration: none;
+    margin: auto;
+}
+
+/* Changing the opacity of navigation bar links on hover */
+.navlist li a:hover {
+    opacity: 0.5;
+}
+
+/* Styling the active/current link in the navigation bar */
+.navlist ul li a.active:not(.dropdown-content a) {
+    border-bottom: 2px solid white; 
+}
+
+/* Styling the icons in the header */
+.header_icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    float: right;
+    width: 120px;
+    margin-right: 40px;
+}
+
+/* Styling the cart and login icons */
+#cart-icon, #login-icon, #signup-icon {
+    width: 35px;
+    padding: 10px;
+    margin: 0;
+}
+
+/* Changing the opacity of header icons on hover */
+.header_icon:hover {
+    opacity: 0.5;
+    content: attr(title);
+}
+
+/* Dropdown Button */
+.dropbtn {
+    cursor: pointer;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+    background-color: #654328;
+}
+
+/* Styling the active/current link in the dropdown menu */
+.dropdown-content .active {
+    background-color: #2e1503;
+}
+
+/* Styling the footer */
+.footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    background-color: #654328; 
+    padding: 20px;
+    text-align: center;
+}
+
+/* Styling the columns in the footer */
+.column {
+    padding: 10px;
+    justify-content: center;
+}
+
+/* Styling the column lists in the footer */
+.column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Styling the first item in column lists in the footer */
+.column ul li:first-child {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* Styling the items in column lists in the footer */
+.column ul li {
+    margin-bottom: 10px;
+}
+
+/* Styling the links in column lists in the footer */
+.column ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Changing the opacity of links in column lists in the footer on hover */
+.column ul li a:hover {
+    opacity: 0.5;
+}
+
+/* Styling the social media icons in the footer */
+#fb, #li {
+    width: 25px;
+}
+
+#ig, #yt {
+    width: 30px;
+}
+
+.soc-med-icons {
+    padding: 10px;
+    align-items: center;
+}
+
+/* Changing the opacity of social media icons in the footer on hover */
+.soc-med-icons:hover {
+    opacity: 0.5;
+}
+
+/* Styling for footer icons */
+.footer-icon {
+    display: inline-block; 
+    vertical-align: middle; 
+    width: 25px;
+    padding: auto;
+    margin-right: 5px;
+}
+
+/* Media queries for responsive design */
+
+/* Media query for screens up to 1024px */
+@media only screen and (max-width: 1024px) {
+    /* Hide header icons */
+    .header_icons {
+        display: none; 
+    }
+
+    /* Display header images and navbar as block elements with centered text */
+    .header_images, #navbar {
+        display: block; 
+        text-align: center; 
+    }
+
+    /* Margin for logo image */
+    .logo_img {
+        margin-bottom: 10px;
+    }
+
+    /* Adjust navbar ul styles for smaller screens */
+    #navbar ul {
+        display: inline-block; 
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Adjust navbar li styles for smaller screens */
+    #navbar ul li {
+        display: inline-block;
+    }
+
+    /* Adjust navbar link styles for smaller screens */
+    #navbar ul li a {
+        display: block;
+        padding: 12px 20px;
+        color: white;
+        text-decoration: none;
+    }
+
+    /* Change opacity of navbar links on hover */
+    #navbar ul li a:hover {
+        opacity: 0.5;
+    }
+}
+
+/* Media query for screens up to 768px */
+@media only screen and (max-width: 768px) {
+    /* Hide header images and icons */
+    .header_images, .header_icons {
+        display: none; 
+    }
+
+    /* Display navbar as block element with centered text */
+    #navbar {
+        display: block; 
+        text-align: center; 
+    }
+
+    /* Adjust navbar ul styles for smaller screens */
+    #navbar ul {
+        display: inline-block; 
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Adjust navbar li styles for smaller screens */
+    #navbar ul li {
+        display: inline-block; 
+    }
+
+    /* Adjust navbar link styles for smaller screens */
+    #navbar ul li a {
+        display: block;
+        padding: 12px 20px;
+        color: white;
+        text-decoration: none;
+    }
+
+    /* Change opacity of navbar links on hover */
+    #navbar ul li a:hover {
+        opacity: 0.5;
+    }
+
+    /* Adjust footer grid columns for smaller screens */
+    .footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Media query for screens up to 480px */
+@media only screen and (max-width: 480px) {
+    /* Adjust footer grid columns for smallest screens */
+    .footer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Feedback Form*/
+  
+/* Styling the background image */
+.background-container {
+    background-image: url('../../IMG/IMG4/Feedback\ Form.jpg');  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styling the form container */
+.form-container {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 40%;
+}
+  
+/* Styling the form title */
+.form-container h2 {
+    color: #654328;
+    margin-bottom: 20px;
+    text-align: center;
+}
+  
+/* Styling the contents of the form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+/* Styling the labels of the input fields of the form */
+label {
+    font-size: 16px;
+    color: #654328;
+    margin-bottom: 5px;
+}
+  
+/* Styling the input fields of the form */
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #654328;
+    border-radius: 5px;
+}
+ 
+/* Styling the submit review button */
+button[type="submit"] {
+    background-color: #654328;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+  
+/* Styling the hovering of the submit review button */
+button[type="submit"]:hover {
+    background-color: #8d662c;
+}
+
+/* Styling the text area of reviews */
+#reviewContent {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* Styling the text area of reviews when the user selects it */
+#reviewContent:focus {
+    border-color: #654328; 
+    outline: none;
+}
+
+/* Styling the background when the popup messages are displayed */
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+    z-index: 999; 
+    backdrop-filter: blur(5px);
+}
+
+/* Styling the popup box */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+/* Styling the popup messages */
+.popup-content {
+    text-align: center;
+    color: #654328;
+    font-size: 18px;
+}
+
+/* Styling the image in the popup message */
+.thank-you-img {
+    width: 300px;
+    height: auto;
+}
+
+/* Close button for the popup */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #654328;
+}
+
+/* Styling the custom-alert messages */
+.custom-alert {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    color: #654328;
+    font-size: 16px;
+}
+

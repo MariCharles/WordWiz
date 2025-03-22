@@ -1,0 +1,52 @@
+body {
+    font-family: Helvetica;
+    margin: 0;
+    padding: 0;
+	background-color:white;	
+
+}
+
+h1, h2{
+	text-align:center;
+	color:Black;
+}
+
+h1 {
+	background: #E8D3B0;
+    padding: 15px;
+}
+
+.top h2 {
+    padding:4px;
+    margin:0;
+	font-size:1rem;
+	font-style:italic;
+}
+
+hr.divider {
+  border: 1.5px solid #b2b2b2;
+  margin:5px;
+}
+
+.top {
+	padding-bottom:15px;
+}
+
+.content{
+	background: #E8D3B0;
+	padding:15px;
+	text-align:center;
+	
+}
+
+ul {
+	list-style-type:none;
+}
+
+.content a{
+	color:#2e1503;
+}
+
+.content a:hover{
+	opacity:0.5;
+}

@@ -1,0 +1,53 @@
+/* PageEditor.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #be9b7b;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #4d3319; /* Dark brown */
+}
+
+.divider {
+    border: 1px solid #8c8c8c; /* Medium brown */
+    margin: 20px 0;
+}
+
+.top, .content {
+    margin-bottom: 30px;
+}
+
+.content h3 {
+    color: #8c5100; /* Brown */
+}
+
+.para {
+    list-style-type: none;
+    padding: 0;
+}
+
+.para li {
+    margin-bottom: 10px;
+}
+
+.para a {
+    color: #8c5100; /* Brown */
+    text-decoration: none;
+}
+
+.para a:hover {
+    text-decoration: underline;
+}
