@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>
+			WordWiz - Sign Up Page
+		</title>
+
+		<link rel="icon" type="image/x-icon" href="IMG/IMG1/website-logo.png">
+		
+		<link rel="stylesheet" href="CSS/CSS1/signup-page.css">
+		
+	</head>
+	
+	<body>
+		
+		<!-- Header -->
+		<header>
+			<div class="header_images">
+				<img class="logo_img" src="IMG/IMG1/website-logo.png" alt="Website logo">
+				<img class="heading_img" src="IMG/IMG1/website-name.png" alt="Heading">
+			</div>
+
+		</header>
+		
+		
+		<!-- Main content -->
+		<div class="body_bg">
+	
+			<div class="container">
+		
+				<form class="form" id="signupForm" method="post">
+				
+				<h1 class="form_title">Create Your Account</h1>
+				
+				
+				<!-- Form field -->
+				<div class="form_input-group">
+					<label for="signupName" class="label">
+						Name<span class="required">*</span>
+					</label>
+					<input type="text" class="form_input requiredInput" id="signupName" autofocus>
+					<div class="form_input-error-message"></div>
+				</div>
+				
+				<div class="form_input-group">
+					<label for="dob" class="label">
+						Date of Birth
+					</label>
+					<input type="date" class="form_input" id="dob">
+				</div>
+				
+				<!-- Form field -->
+				<div class="form_input-group">
+					<label for="email" class="label">
+						Email<span class="required">*</span>
+					</label>
+					<input type="text" class="form_input requiredInput" id="email">
+					<div class="form_input-error-message"></div>
+				</div>
+				
+				<!-- Form field -->
+				<div class="form_input-group">
+					<label for="userpw" class="label">
+						Password<span class="required">*</span>
+					</label>
+					<input type="password" class="form_input requiredInput" id="userpw">
+					<div class="form_input-error-message"></div>
+				</div>
+				
+				<!-- Form field -->
+				<div class="form_input-group">
+					<label for="confirm_password" class="label">
+						Confirm Password<span class="required">*</span>
+					</label>
+					<input type="password" class="form_input requiredInput" id="confirm_password">
+					<div class="form_input-error-message"></div>
+				</div>
+
+				<!-- Checkbox -->
+				<p class="form_text">
+					<input type="checkbox" onclick="showPassword()" id="pwCheckbox">
+					<label for="pwCheckbox">
+						Show Password 
+					</label>
+				</p>
+
+
+				<br>
+				<br>
+				
+				<!-- Selecting an Item -->
+				<label for="q1" class="form_question">
+				Which language do you want to learn?
+				</label>
+
+				<select name="language" class="custom-select" id="q1">
+				<option value="english">English</option>
+				<option value="spanish">Spanish</option>
+				<option value="italian">Italian</option>
+				<option value="french">French</option>
+				<option value="german">German</option>
+				</select> 
+				<br>
+				<br>
+				
+				<!-- Selecting an Item -->
+				<label for="q2" class="form_question">
+				What is your language level?
+				</label>
+
+				<select name="level" class="custom-select" id="q2">
+				<option value="beginner">Beginner</option>
+				<option value="intermediate">Intermediate</option>
+				<option value="advanced">Advanced</option>
+				</select>
+				<br>
+				<br>
+				
+				<!-- Selecting an Item -->
+				<label for="q3" class="form_question">
+				What is your primary reason for learning this language?
+				</label>
+
+				<select name="reason" class="custom-select" id="q3">
+				<option value="education">University and Education</option>
+				<option value="job">Job and Career Growth</option>
+				<option value="immigration">Immigration and Living Abroad</option>
+				<option value="social">Better Communication and Social Life</option>
+				<option value="peronal">Personal Growth and Leisure</option>
+				<option value="other">Other</option>
+				</select>
+				
+				<!-- Agreement checkbox -->
+				<p class="form_text">
+					<input type="checkbox" class="requiredInput" name="tc" id="tc">
+					<label for="tc">
+						I agree to the <a class="form_link" href="#">Terms and Conditions</a>
+					</label>
+				</p>
+			
+				<!-- Buttons -->
+				<div class="buttons">
+					<input type="reset" value="Reset" class="form_button" id="reset_btn">
+					<input type="submit" value="Proceed" class="form_button" id="submit_btn">
+				</div>
+				
+				<!-- Sign in link -->
+				<p class="form_text" id="sign_in_link">
+					<a class="form_link" href="login-page.html">Already have an account? Log in</a>
+				</p>
+				
+				
+				</form>
+			</div>
+			
+		</div>
+		
+		<!-- Footer -->
+		<footer class="footer">
+
+			<!-- Footer content -->
+			<div class="column">
+				<ul>
+					<li>Contact Us</li>
+					<li><a href="#"><img class="footer-icon" id="contact-icon" src="IMG/IMG1/contact-icon.png" alt="contact-icon">+94 71 5555555</a></li>
+					<li><a href="#"><img class="footer-icon" id="mail-icon" src="IMG/IMG1/mail-icon.png" alt="mail-icon">wordwiz@gmail.com</a></li>
+				</ul>
+			</div>
+			
+			<!-- Footer content -->
+			<div class="column">
+				<ul>
+					<li>About Us</li>
+					<li><a href="page-editor-1.html" target="_blank">Page Editor 1</a></li>
+				</ul>
+			</div>
+			
+			<!-- Footer content -->
+			<div class="column">
+				<ul>
+					<li>Customer Policy</li>
+					<li><a href="#">Terms and Conditions</a></li>
+				</ul>
+			</div>
+			
+			<!-- Footer content -->
+			<div class="column">
+				<ul>
+					<li>Connect With Us</li>
+				</ul>
+
+				<a href="#"><img class="soc-med-icons" id="li" src="IMG/IMG1/li-icon.png" alt="linkedin-logo"></a>
+				<a href="#"><img class="soc-med-icons" id="fb" src="IMG/IMG1/fb-icon.png" alt="facebook-logo"></a>
+				<a href="#"><img class="soc-med-icons" id="ig" src="IMG/IMG1/ig-icon.png" alt="instagram-logo"></a>
+				<a href="#"><img class="soc-med-icons" id="yt" src="IMG/IMG1/yt-icon.png" alt="youtube-logo"></a>
+
+			</div>
+
+		</footer>
+
+		<!-- Popup for successful sign up -->
+
+		<div id="blurBackground"></div>
+
+		<div id="successPopup" class="popup">
+			<div class="popup-content">
+				<p>Hello <span id="userNameSpan"></span>, thank you for signing up with WordWiz! The recommended results will be shown in a while!</p>
+				<p>Welcome to our community! We're excited to have you on board and can't wait for you to explore all the exciting features WordWiz has to offer.</p>
+				<img src="IMG/IMG1/signup-img.jpg" alt="image of people communicating in different languages" class="popup-img">
+			</div>
+		</div>
+	
+	
+	
+		<script src="JS/JS1/sign-up.js"></script>
+	</body>
+	
+	
+</html>

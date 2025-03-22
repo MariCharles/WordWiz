@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="CSS4/XML.css"?>
+<reviews>
+
+    <review>
+        <reviewer>
+            <name>Emma Morgan</name>
+            <avatar>R1.jpg</avatar>
+        </reviewer>
+        <date>March 1, 2024</date>
+        <rating>5</rating>
+        <content>Used to struggle with expensive and time-consuming language tutors who imposed rigid schedules and created anxiety through judgment. But now, thanks to this AI-tutor, I can practice anytime, anywhere, and confidently speak without fear of judgment – all at a fraction of the cost.</content>
+    </review>
+    
+    <review>
+        <reviewer>
+            <name>Jordan Robertson</name>
+            <avatar>R2.jpeg</avatar>
+        </reviewer>
+        <date>February 29, 2024</date>
+        <rating>4</rating>
+        <content>My Fiancé is Italian so I wanted to learn their language to communicate easily. Over the year I can now string small sentences together. I don't think I could of done it without the help of Wordwiz.</content>
+    </review>
+    
+    <review>
+        <reviewer>
+            <name>Clive Charles</name>
+            <avatar>R3.jpeg</avatar>
+        </reviewer>
+        <date>March 6, 2024</date>
+        <rating>5</rating>
+        <content>If you’re not a native speaker but have to speak as one because you’re living in another country, this AI personal tutor is for you. Learning through vocabulary feels very natural and all new words are presented in context so you can communicate more effectively. Hooked up with this so far!</content>
+    </review>
+    
+    <review>
+        <reviewer>
+            <name>Laura Fradd</name>
+            <avatar>R4.jpg</avatar>
+        </reviewer>
+        <date>January 3, 2024</date>
+        <rating>4</rating>
+        <content>I love getting feedback on how and what to change in order to improve. I think it’s an interesting and great way to learn a new language in your free time.</content>
+    </review>
+
+</reviews>

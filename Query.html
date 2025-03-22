@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<title>
+				Query Form
+			</title>			
+  			<link rel="icon" type="image/x-icon" href="IMG/IMG1/website-logo.png">
+			
+			<link rel="stylesheet" href="CSS/CSS2/Query.css">
+			
+		</head>
+		
+		<body>
+			<header>
+				<div class="header_images">
+					<img class="logo_img" src="IMG/IMG2/logo6.png" alt="Logo">
+					<img class="heading_img" src="IMG/IMG2/h2.png" alt="Heading">
+				</div>
+			
+				 <nav id="navbar" class="navlist">
+                    <ul>
+                        <li><a href="MainPage.html">Home</a></li>
+                        <li><a href="gallery-page.html">Gallery</a></li>
+                        <li id="dropdown" class="dropdown">
+                            <a class="dropbtn">Languages</a>
+                                <div class="dropdown-content">
+                                    <a href="English.html" >English</a>
+                                    <a href="French.html" >French</a>
+                                    <a href="Italian.html" >Italian</a>
+                                    <a href="Spanish.html" >Spanish</a>
+                                    <a href="German.html" >German</a>
+                                </div>
+                        </li>
+                        <li><a href="Shop.html">Shop</a></li>
+                        <li><a href="Review Page.html">Reviews</a></li>
+                        <li><a class="active" href="Query.html">Queries</a></li>
+						<li><a href="AboutUs.html">About Us</a></li>
+                    </ul>   
+                </nav>
+
+				<div class="header_icons">
+					<a href="Shop.html"><img class="header_icon" id="cart-icon" src="IMG/IMG2/cart-icon.png" alt="cart-icon" title="Shopping Cart"></a>
+					<a href="login-page.html"><img class="header_icon" id="login-icon" src="IMG/IMG2/login-icon.png" alt="login-icon" title="Login"></a>
+					<a href="signup-page.html"><img class="header_icon" id="signup-icon" src="IMG/IMG2/signup-icon.png" alt="signup-icon" title="Signup"></a>
+				</div>
+
+			</header>
+			<div class="centered-form"> 
+			<section class="query-form">
+				<h1>Send us your query</h1>
+				<form id="queryForm" action="#" method="post" onsubmit="return validateForm()">
+					<div class="form-group">
+						<label for="name">Name:</label>
+						<input type="text" id="name" name="name">
+					</div>
+					<br>
+					<div class="form-group">
+						<label for="email">Email:</label>
+						<input type="text" id="email" name="email">
+					</div>
+					<br>
+					<div class="form-group">
+						<label for="complaintAbout">
+										What is the theme of the query?
+									</label>
+									<br>
+									<br>
+										<label for="Tech">
+										<input type="radio" id="Tech" name="Q_type" value="Technical"> 
+										Technical
+										</label>
+										<br>
+										
+										<label for="General">
+										<input type="radio" id="General" name="Q_type" value="General"> 
+										General
+										</label>
+										<br>
+										
+										<label for="Pur">
+										<input type="radio" id="Pur" name="Q_type" value="Delievery and Purrchases">
+										Delievery and Purchases
+										</label>
+										<br>
+										
+										<label for="queryAbout">
+										<input type="radio" id="queryAbout" name="Q_type" value="Other"> 
+										Other
+										</label>
+										<br>
+										<br>
+										</div>
+										<div class="form-group">
+											<label for="detail">
+															Query Details:
+															</label>
+															<br>
+										
+										<textarea id="detail" name="detail" rows="4" ></textarea>
+										
+										<br>
+					</div>
+					<br>
+					
+					<div class="form-group button-container">
+						<button type="button" id="resetButton">Reset</button>
+						<button type="button" id="submitButton">Submit</button>
+
+					</div>
+					
+				</form>
+			</section>
+		</div>
+			
+			
+			
+			
+			<footer class="footer">
+
+				<div class="column">
+					<ul>
+						<li>Contact Us</li>
+						<li><a href="#"><img class="footer-icon" id="contact-icon" src="IMG/IMG2/contact-icon.png" alt="contact-icon">+94 71 5555555</a></li>
+						<li><a href="#"><img class="footer-icon" id="mail-icon" src="IMG/IMG2/mail-icon.png" alt="mail-icon">wordwiz@gmail.com</a></li>
+					</ul>
+				</div>
+		
+				<div class="column">
+					<ul>
+						<li>About Us</li>
+						<li><a href="Edit.html" target="_blank">Page Editor 2</a></li>
+					</ul>
+				</div>
+				
+				<div class="column">
+					<ul>
+						<li>Customer Policy</li>
+						<li><a href="#">Terms And Conditions</a></li>
+						
+					</ul>
+				</div>
+				
+				
+				<div class="column">
+					<ul>
+						<li>Connect With Us</li>
+						<a href="#"><img class="soc-med-icons" id="li" src="IMG/IMG2/li-logo7.png" alt="linkedin-logo"></a>
+						<a href="#"><img class="soc-med-icons" id="fb" src="IMG/IMG2/fb-logo6.png" alt="facebook-logo"></a>
+						<a href="#"><img class="soc-med-icons" id="ig" src="IMG/IMG2/ig-logo7.png" alt="instagram-logo"></a>
+						<a href="#"><img class="soc-med-icons" id="yt" src="IMG/IMG2/yt-logo7.png" alt="youtube-logo"></a>
+						
+						
+					</ul>
+				</div>
+
+			</footer>
+			<script src="JS/JS2/Query.js"></script>
+		</body>
+</html>

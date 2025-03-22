@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>
+			WordWiz - Login Page
+		</title>
+
+		<link rel="icon" type="image/x-icon" href="IMG/IMG1/website-logo.png">
+		
+		<link rel="stylesheet" href="CSS/CSS1/login-page.css">
+		
+	</head>
+	
+	<body>
+		<!-- Header -->
+		<header>
+			<!-- Header with logo and heading -->
+			<div class="header_images">
+				<img class="logo_img" src="IMG/IMG1/website-logo.png" alt="Website Logo">
+				<img class="heading_img" src="IMG/IMG1/website-name.png" alt="Heading">
+			</div>
+
+		</header>
+		
+		<!-- Body background -->
+		<div class="body_bg">
+	
+			<div class="container">
+
+				<!-- Login form -->
+				<form class="form" id="loginForm">
+					<h1 class="form_title">Login</h1>
+
+					<!-- Form message for errors -->
+					<div class="form_message form_message-error"></div>
+					
+					<!-- Email input -->
+					<div class="form_input-group">
+						<label for="userEmail" class="label">
+							Email<span class="required">*</span>
+						</label>
+						<input type="text" class="form_input requiredInput" id="userEmail" autofocus>
+						<div class="form_input-error-message"></div>
+					</div>
+					
+					<!-- Password input -->
+					<div class="form_input-group">
+						<label for="userpw" class="label">
+							Password<span class="required">*</span>
+						</label>
+						<input type="password" class="form_input requiredInput" id="userpw">
+						<div class="form_input-error-message"></div>
+					</div>
+					
+					<!-- Checkbox to show password -->
+					<p class="form_text">
+						<input type="checkbox" onclick="showPassword()" id="pwCheckbox">
+						<label for="pwCheckbox">
+							Show Password 
+						</label>
+					</p>
+
+						
+					<!-- Form buttons -->
+					<div class="buttons">
+						<input type="reset" value="Reset" class="form_button" id="reset_btn">
+						<input type="submit" value="Proceed" class="form_button" id="submit_btn">
+					</div>
+					
+					<!-- Link to sign up page -->
+					<p class="form_text" id="sign-up-link">
+						<a class="form_link" href="signup-page.html">Don't have an account? Create account</a>
+					</p>
+			
+				</form>
+				
+			</div>
+		</div>
+		
+		<!-- Footer section -->
+		<footer class="footer">
+
+			<!-- Column for footer -->
+			<div class="column">
+				<ul>
+					<li>Contact Us</li>
+					<li><a href="#"><img class="footer-icon" id="contact-icon" src="IMG/IMG1/contact-icon.png" alt="contact-icon">+94 71 5555555</a></li>
+					<li><a href="#"><img class="footer-icon" id="mail-icon" src="IMG/IMG1/mail-icon.png" alt="mail-icon">wordwiz@gmail.com</a></li>
+				</ul>
+			</div>
+			
+			<!-- Column for footer -->
+			<div class="column">
+				<ul>
+					<li>About Us</li>
+					<li><a href="page-editor-1.html" target="_blank">Page Editor 1</a></li>
+				</ul>
+			</div>
+			
+			<!-- Column for footer -->
+			<div class="column">
+				<ul>
+					<li>Customer Policy</li>
+					<li><a href="#">Terms and Conditions</a></li>
+				</ul>
+			</div>
+			
+			<!-- Column for footer -->
+			<div class="column">
+				<ul>
+					<li>Connect With Us</li>
+				</ul>
+
+				<a href="#"><img class="soc-med-icons" id="li" src="IMG/IMG1/li-icon.png" alt="linkedin-logo"></a>
+				<a href="#"><img class="soc-med-icons" id="fb" src="IMG/IMG1/fb-icon.png" alt="facebook-logo"></a>
+				<a href="#"><img class="soc-med-icons" id="ig" src="IMG/IMG1/ig-icon.png" alt="instagram-logo"></a>
+				<a href="#"><img class="soc-med-icons" id="yt" src="IMG/IMG1/yt-icon.png" alt="youtube-logo"></a>
+
+			</div>
+
+		</footer>
+
+		<!-- Background blur for pop-up -->
+		<div id="blurBackground"></div>
+
+		<!-- Success pop-up -->
+		<div id="successPopup" class="popup">
+			<div class="popup-content">
+				<p></p>
+				<p></p>
+				<img src="IMG/IMG1/login-img.jpg" alt="image-of-people-communicating-in-different-languages" class="popup-img">
+			</div>
+		</div>
+
+		<script src="JS/JS1/login-page.js"></script>
+
+	</body>
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Newsletter Subscription</title>
+    <link rel="icon" type="image/x-icon" href="IMG/IMG1/website-logo.png">
+    <link rel="stylesheet" href="CSS/CSS4/Newsletter Form.css">
+    <script src="JS/JS4/Newsletter Form.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header_images">
+            <img class="logo_img" src="IMG/IMG4/Logo/Logo.png" alt="Logo">
+            <img class="heading_img" src="IMG/IMG4/Logo/Heading.png" alt="Heading">
+        </div>
+    
+         <nav id="navbar" class="navlist">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li id="dropdown" class="dropdown">
+                    <a class="dropbtn">Languages</a>
+                        <div class="dropdown-content">
+                            <a href="English.html">English</a>
+                            <a href="French.html">French</a>
+                            <a href="Italian.html">Italian</a>
+                            <a href="Spanish.html">Spanish</a>
+                            <a href="German.html">German</a>
+                        </div>
+                </li>
+                <li><a href="Shop.html">Shop</a></li>
+                <li><a class="active" href="Review Page.html">Reviews</a></li>
+                <li><a href="Query.html">Queries</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+            </ul>   
+        </nav>
+
+        <div class="header_icons">
+            <a href="Shop.html"><img class="header_icon" id="cart-icon" src="IMG/IMG4/Icons/Cart.png" alt="cart-icon" title="Shopping Cart"></a>
+            <a href="login-page.html"><img class="header_icon" id="login-icon" src="IMG/IMG4/Icons/Login.png" alt="login-icon" title="Login"></a>
+            <a href="signup-page.html"><img class="header_icon" id="signup-icon" src="IMG/IMG4/Icons/Signup.png" alt="signup-icon" title="Signup"></a>
+        </div>
+
+    </header>
+
+    <div id="customAlert" class="custom-alert"></div>
+
+    <div class="background-container">  
+        <div class="form-container">
+            <h2>Subscribe for a Personalized Newsletter</h2>
+            <form id="newsletterForm" onsubmit="validateForm(event)">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+
+                <label for="email">Email Address:</label>
+                <input type="text" id="email" name="email">
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+
+        <div class="column">
+            <ul>
+                <li>Contact Us</li>
+                <li><a href="#"><img class="footer-icon" id="contact-icon" src="IMG/IMG4/Icons/Contact.png" alt="contact-icon">+94 71 5555555</a></li>
+                <li><a href="#"><img class="footer-icon" id="mail-icon" src="IMG/IMG4/Icons/Mail.png" alt="mail-icon">wordwiz@gmail.com</a></li>
+            </ul>
+        </div>
+
+        <div class="column">
+            <ul>
+                <li>About Us</li>
+				<li><a href="Page Editor.html" target="_blank">Page Editor</a></li>
+            </ul>
+        </div>
+        
+        <div class="column">
+            <ul>
+                <li>Customer Policy</li>
+                <li><a href="#">Terms And Conditions</a></li>
+            </ul>
+        </div>
+        
+        <div class="column">
+            <ul>
+                <li>Connect With Us</li>
+                <a href="#"><img class="soc-med-icons" id="li" src="IMG/IMG4/Icons/LinkedIn.png" alt="linkedin-logo"></a>
+                <a href="#"><img class="soc-med-icons" id="fb" src="IMG/IMG4/Icons/FB.png" alt="facebook-logo"></a>
+                <a href="#"><img class="soc-med-icons" id="ig" src="IMG/IMG4/Icons/IG.png" alt="instagram-logo"></a>
+                <a href="#"><img class="soc-med-icons" id="yt" src="IMG/IMG4/Icons/YT.png" alt="youtube-logo"></a>						
+            </ul>
+        </div>
+
+    </footer>
+
+    <div id="popup-overlay" class="popup-overlay"></div>
+
+    <div id="popup" class="popup">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <div class="popup-content" id="popup-message"></div>
+    </div>
+
+</body>
+
+</html>
